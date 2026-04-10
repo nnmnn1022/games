@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>무현 & 동향 애프터 파티!</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="app" class="container">
-      <!-- 동적으로 콘텐츠가 여기에 로드됩니다 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section id="main-screen" class="screen active">
+            <h1 class="neon-text">무현 & 동향<br>애프터 파티!</h1>
+            
+            <div class="qr-container">
+                <img src="assets/QR_code.png" alt="QR Code" class="qr-code">
+            </div>
+
+            <div class="menu-options">
+                <a href="dice-game.html" class="menu-btn">주사위 게임 1</a>
+                <a href="dice-game-2.html" class="menu-btn">주사위 게임 2</a>
+                <button class="menu-btn" onclick="enterParty()">파티 입장</button>
+            </div>
+        </section>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
